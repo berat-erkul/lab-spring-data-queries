@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class QueryTest implements CommandLineRunner {
 
-    private final AddressRepository addressRepository;
     private final BalanceRepository balanceRepository;
     private final CartItemRepository cartItemRepository;
     private final CartRepository cartRepository;
@@ -24,7 +23,6 @@ public class QueryTest implements CommandLineRunner {
                      CategoryRepository categoryRepository, CustomerRepository customerRepository,
                      DiscountRepository discountRepository, OrderRepository orderRepository,
                      PaymentRepository paymentRepository, ProductRepository productRepository) {
-        this.addressRepository = addressRepository;
         this.balanceRepository = balanceRepository;
         this.cartItemRepository = cartItemRepository;
         this.cartRepository = cartRepository;
